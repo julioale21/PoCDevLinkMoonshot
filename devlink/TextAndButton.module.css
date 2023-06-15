@@ -1,0 +1,59 @@
+.div-block-3 {
+  display: flex;
+  max-width: 750px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.component-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Proxima Nova';
+  color: ivory;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+}
+
+.a-leadtext {
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 28px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .a-leadtext {
+    font-size: 23px;
+    line-height: 33px;
+  }
+}
+
+.a-leadtext.maxwidth750 {
+  max-width: 750px;
+  margin-bottom: 20px;
+
+  font-family: 'Proxima Nova';
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.a-leadtext.maxwidth750.team {
+  position: relative;
+  z-index: 1000;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  color: hsla(0, 0.00%, 100.00%, 0.75);
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .a-leadtext.maxwidth750.team {
+    width: 95%;
+  }
+}

@@ -1,95 +1,58 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client'
+
+import React from 'react';
+
+import { Image, Stack, Text } from "@chakra-ui/react";
+import { BigOutlinedButton, PeopleCard, SimpleTitleAndText, TextAndButton } from '../../devlink';
+import { arrayItemsData } from '../constants/itemsData';
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <Stack width="100%" minH={"100vh"} bgColor="#151616">
+      <Stack>
+        <Stack zIndex={0} position="absolute">
+          <Image alt="image-background" src="https://assets.website-files.com/5c837a12af626286ed0fec32/5c906f02a5701dc8919d6a41_BackgroundYellow.svg" />
+        </Stack>
+        <Stack zIndex={1} className='content' width={"100%"}>
+          {/* <Stack marginBottom={20} marginTop={150} marginX="auto" maxW={750} width={"100%"} flexDirection={"column"}>
+            <Text 
+              fontWeight="extrabold" 
+              textAlign={"center"} 
+              color={"white"} f
+              fontSize="7xl"
+            >Grow your people</Text>
+            <Text 
+              fontSize="3xl"
+              textAlign="center"
+            >Join some of the world’s leading companies in helping your team grow, by giving them access to any learning resource in the world through Sunlight</Text>
+            <Stack marginX="auto" maxW={298}>
+              <BigOutlinedButton ctaText="Try it now for free" />
+            </Stack>
+          </Stack> */}
+          <Stack alignItems="center" marginBottom={20} marginTop={150} justifyContent="center" width="100%">
+            <TextAndButton />
+          </Stack>
+          <Stack 
+            marginX="auto" 
+            maxW={"90%"}  
+            gap={10} 
+            flexDirection="row" 
+            flexWrap="wrap" 
+            justifyContent={"center"}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+              { arrayItemsData.map((item, index) => (
+                <PeopleCard key={index} title={item.title} imageUrl={item.imageUrl} text={item.text} />
+              ))}
+              <Stack>
+                <SimpleTitleAndText 
+                  title="The learning you want" 
+                  text="Everyone learns in different ways. Just give your team a Sunlight budget and they can use it to access any learning in the world."/>
+              </Stack>
+            <Stack height={800}></Stack>
+          </Stack>
+        </Stack>
+      </Stack>
+    </Stack>
   )
 }

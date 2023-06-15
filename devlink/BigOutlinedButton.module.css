@@ -1,0 +1,137 @@
+.a-button {
+  margin-bottom: 20px;
+  padding: 15px 45px;
+
+  border: 2px solid #33c588;
+  border-radius: 100px;
+
+  transition: all 250ms ease;
+
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.a-button:hover {
+  border-color: var(--primaryGreen-93a27a6f);
+  background-color: var(--primaryGreen-93a27a6f);
+}
+
+.a-button.huge {
+  display: flex;
+  max-width: 297px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Proxima Nova';
+  color: white;
+  font-size: 25px;
+  line-height: 41px;
+  font-weight: 600;
+}
+
+.a-button.white {
+  border-color: hsla(154.93150684931504, 0.00%, 100.00%, 1.00);
+}
+
+.a-button.white:hover {
+  background-color: hsla(154.93150684931504, 0.00%, 100.00%, 1.00);
+  color: hsla(0, 0.00%, 0.00%, 1.00);
+}
+
+.a-button.yellow {
+  margin-right: 40px;
+  border-color: var(--yellow-2b0d13ae);
+  background-color: var(--yellow-2b0d13ae);
+}
+
+@media screen and (max-width: 767px) {
+  .a-button.yellow {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .a-button.yellow {
+    margin-right: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.a-button.yellow:hover {
+  background-color: white;
+  color: var(--yellow-2b0d13ae);
+}
+
+.a-button.yellow.nomargin {
+  margin-right: 0px;
+}
+
+.a-button.blue {
+  margin-right: 40px;
+  border-color: var(--steelBlue-a674c4ee);
+  background-color: var(--steelBlue-a674c4ee);
+}
+
+.a-button.blue:hover {
+  background-color: var(--white-88154804);
+  color: var(--steelBlue-a674c4ee);
+}
+
+@media screen and (max-width: 767px) {
+  .a-button.blue {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .a-button.blue {
+    margin-right: 0px;
+  }
+}
+
+.a-button.blue.nomargin {
+  margin-right: 0px;
+}
+
+.a-button.small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+
+.a-button.small:hover {
+  background-color: var(--primaryGreen-93a27a6f);
+  color: var(--white-88154804);
+}
+
+.a-button.small.yellow.nomargin {
+  background-color: transparent;
+}
+
+.a-button.small.yellow.nomargin:hover {
+  background-color: var(--yellow-2b0d13ae);
+  color: var(--white-88154804);
+}
+
+.a-button.small.blue.nomargin {
+  border-color: var(--blue-630bc815);
+  background-color: transparent;
+}
+
+.a-button.small.blue.nomargin:hover {
+  background-color: var(--blue-630bc815);
+  color: var(--white-88154804);
+}
+
+.a-button.jobs {
+  margin-top: 10px;
+  padding: 5px 20px;
+  border-color: var(--orchid-4d86df50);
+  background-color: #c675c1;
+}

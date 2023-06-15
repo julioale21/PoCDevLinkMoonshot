@@ -1,0 +1,127 @@
+.mobilenavbar {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .mobilenavbar {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 1100;
+
+    display: block;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    background-color: #151617;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .brand {
+    padding-top: 12px;
+  }
+}
+
+.a-navlink {
+  display: inline-block;
+  padding: 30px 10px;
+
+  transition: all 250ms ease;
+
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.a-navlink:hover {
+  color: white;
+}
+
+.a-navlink:global(.w--current) {
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+}
+
+.a-navlink.usescases {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .a-navlink.mobile {
+    position: relative;
+    left: 65%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .a-navlink.mobile {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .a-navlink.mobile {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .v-mobilenavmenu {
+    z-index: 1100;
+    margin-top: 5px;
+    border-radius: 12px;
+    background-color: #151617;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .v-mobilelink {
+    margin-top: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: hsla(0, 0.00%, 100.00%, 0.50);
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .v-mobilelink.dropdown {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .dropdown-list {
+    background-color: var(--black-1b11a2f7);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .v-menubuttonmobile:global(.w--open) {
+    background-color: hsla(0, 0.00%, 78.43%, 0.00);
+  }
+}
