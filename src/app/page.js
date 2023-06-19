@@ -15,21 +15,6 @@ export default function Home() {
           <Image alt="image-background" src="https://assets.website-files.com/5c837a12af626286ed0fec32/5c906f02a5701dc8919d6a41_BackgroundYellow.svg" />
         </Stack>
         <Stack zIndex={1} className='content' width={"100%"}>
-          {/* <Stack marginBottom={20} marginTop={150} marginX="auto" maxW={750} width={"100%"} flexDirection={"column"}>
-            <Text 
-              fontWeight="extrabold" 
-              textAlign={"center"} 
-              color={"white"} f
-              fontSize="7xl"
-            >Grow your people</Text>
-            <Text 
-              fontSize="3xl"
-              textAlign="center"
-            >Join some of the world’s leading companies in helping your team grow, by giving them access to any learning resource in the world through Sunlight</Text>
-            <Stack marginX="auto" maxW={298}>
-              <BigOutlinedButton ctaText="Try it now for free" />
-            </Stack>
-          </Stack> */}
           <Stack alignItems="center" marginBottom={20} marginTop={150} justifyContent="center" width="100%">
             <TextAndButton />
           </Stack>
