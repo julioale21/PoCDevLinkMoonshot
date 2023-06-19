@@ -1,0 +1,17 @@
+.a-sandboxformbutton {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  padding: 18px 15px;
+
+  border-radius: 12px;
+
+  background-color: hsla(154.93150684931504, 60.71%, 49.36%, 1.00);
+
+  font-family: 'Proxima Nova';
+  color: hsla(0, 100.00%, 99.56%, 0.50);
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.new-heading {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  font-family: 'Proxima Nova';
+  color: ivory;
+  font-size: 80px;
+  line-height: 90px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
